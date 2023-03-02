@@ -1,0 +1,32 @@
+<div class="card mt-5" style="width: 28rem;">  
+<h2 class="text-center title-card pt-2">Añadir Plan</h2>
+<div class="text-center">
+        <span *ngIf="formularioIncorrecto" class="badge bg-dark">DEBES RELLENAR TODOS LOS CAMPOS</span>
+</div>
+  <div class="card-body">
+        <form>
+  <div class="mb-3">
+    <label for="titulo" class="form-label title_form">Titulo</label>
+    <input type="text" class="form-control" id="titulo" [(ngModel)]='titulo'>
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+    <div class="mb-3">
+    <label for="lugar" class="form-label title_form">Lugar
+    </label>
+    <input [(ngModel)]='lugar'  type="text" class="form-control" id="lugar" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+  <div class="mb-3">
+    <label for="fecha" class="form-label title_form">Fecha</label>
+    <input [(ngModel)]='fecha' type="date" class="form-control" id="fecha">
+  </div>
+   <div class="mb-3">
+    <label for="feche" class="form-label title_form">Hora</label>
+    <input [(ngModel)]='hora' type="time" class="form-control" id="hora">
+  </div>
+
+  <button type="submit" (click)="agregarPlan()" class="btn button-os mt-4" id="foot">Añadir</button>
+</form>
+  </div>
+</div>
+

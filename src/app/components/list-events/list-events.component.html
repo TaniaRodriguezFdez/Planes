@@ -1,0 +1,15 @@
+<div class="card mt-5 p-3">
+  <h3 class="text-center title-card">Lista de Planes</h3>
+  <div  class="card-body">
+    <span *ngIf="listadoEvents.length === 0" class="card-text">No hay planes para mostrar</span>
+  </div>
+  <div *ngFor="let plan of listadoEvents; let i = index"  class="card mb-2">
+    <div class="card-body">
+      <h5 class="card-text">Título: {{plan.titulo}}</h5>
+      <p class="card-text">Lugar: {{plan.lugar}} </p>
+      <p class="card-text">Fecha: {{plan.fecha}}</p>
+      <p class="card-text">Hora: {{plan.hora}}</p>
+</div>
+<div class="btn btn-block" (click)="eliminarEvento(i)">Eliminar</div>
+</div>
+</div>

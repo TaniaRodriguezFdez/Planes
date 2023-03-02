@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title {
+  font-family: "Ms Madi", cursive;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: rgb(188, 222, 84);
+  border: 2px solid;
+}
+.card {
+   background:linear-gradient(
+    to right,
+    #3b038f,
+    #761db1da,
+    #588aee61
+  );
+  border: 2px solid rgb(146, 235, 30);
+}
+.btn {
+  border: 2px solid rgb(105, 31, 179);
+  background-color: rgb(184, 248, 82);
+  font-family: "Righteous";
+  color: #490c98;
+  width: 100%;
+}
